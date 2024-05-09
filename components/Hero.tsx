@@ -4,6 +4,8 @@ import Image from "next/image";
 import React from "react";
 import personalImage from "@/public/my-image.jpg";
 import { motion } from "framer-motion";
+import { BsArrowRight, BsDribbble, BsGithub, BsLinkedin } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -42,6 +44,40 @@ export default function Hero() {
         <span className="font-bold">visually appealing </span> digital
         solutions.
       </motion.p>
+
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
+        <Link
+          href="#contact"
+          className="bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+        >
+          Get in touch <BsArrowRight />
+        </Link>
+        <Link
+          href="/resume"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full"
+        >
+          My resume <BsArrowRight />
+        </Link>
+
+        <Link
+          href="/linkedin"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full"
+        >
+          <BsLinkedin />
+        </Link>
+        <Link
+          href="/linkedin"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full"
+        >
+          <BsGithub />
+        </Link>
+        <Link
+          href="/linkedin"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full"
+        >
+          <BsDribbble />
+        </Link>
+      </div>
     </section>
   );
 }
