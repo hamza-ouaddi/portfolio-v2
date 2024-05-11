@@ -69,21 +69,22 @@ export default function Hero() {
         </Link>
 
         <Link
-          href="/linkedin"
+          href="https://www.linkedin.com/in/hamza-ouaddi/"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none 
           focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition border border-black/10"
         >
           <BsLinkedin />
         </Link>
         <Link
-          href="/linkedin"
+          href="https://github.com/hamza-ouaddi"
+          target="_blank"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none 
           focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition border border-black/10"
         >
           <BsGithub />
         </Link>
         <Link
-          href="/linkedin"
+          href="https://dribbble.com/hamza_adi"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none 
           focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition border border-black/10"
         >
