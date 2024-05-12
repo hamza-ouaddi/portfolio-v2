@@ -31,7 +31,7 @@ export default function Hero() {
         also look awesome. Let's team up and turn your concepts into reality!
       </p> */}
 
-      <motion.p
+      <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl sm:text-4xl font-medium !leading-[1.5]"
@@ -43,7 +43,7 @@ export default function Hero() {
         creating <span className="font-bold">user-friendly</span> and{" "}
         <span className="font-bold">visually appealing </span> digital
         solutions.
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
