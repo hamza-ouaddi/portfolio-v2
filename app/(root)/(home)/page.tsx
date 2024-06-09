@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import SelectedProjects from "@/components/SelectedProjects";
 import SectionDivider from "@/components/ui/SectionDivider";
 import React from "react";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <SectionDivider />
       <About />
+      <SelectedProjects />
     </main>
   );
 }
