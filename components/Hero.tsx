@@ -9,7 +9,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="mb-28 text-center max-w-[55rem] sm:mb-0">
+    <section
+      id="home"
+      className="mb-28 text-center max-w-[55rem] sm:mb-0 scroll-mt-96"
+    >
       <div className="flex justify-center items-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
