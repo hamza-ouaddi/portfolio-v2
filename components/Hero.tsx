@@ -1,15 +1,28 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import personalImage from "@/public/my-image.jpg";
 import { motion } from "framer-motion";
 import { BsArrowRight, BsDribbble, BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useInView } from "react-intersection-observer";
 
 export default function Hero() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 text-center max-w-[55rem] sm:mb-0 scroll-mt-96"
     >
