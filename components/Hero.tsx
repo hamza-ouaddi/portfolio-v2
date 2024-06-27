@@ -1,25 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import personalImage from "@/public/my-image.jpg";
 import { motion } from "framer-motion";
 import { BsArrowRight, BsDribbble, BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import { useInView } from "react-intersection-observer";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Hero() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-  const { setActiveSection } = useActiveSectionContext();
+ const {ref} = useSectionInView("Home", 0.5);
 
-  useEffect(() => {
-    if (inView) {
-      setActiveSection("Home");
-    }
-  }, [inView, setActiveSection]);
   return (
     <section
       ref={ref}
