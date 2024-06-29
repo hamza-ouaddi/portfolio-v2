@@ -297,3 +297,25 @@ export const projects = [
     category: "Development",
   },
 ] as const;
+
+export const skills = [
+  "HTML5",
+  "CSS3",
+  "Bootstrap",
+  "Sass",
+  "Tailwind CSS",
+  "JavaScript",
+  "React",
+  "Next.js",
+  "Vue.js",
+  "Node.js",
+  "PHP Laravel",
+  "C#",
+  "MongoDB",
+  "SQL & MySQL",
+  "WordPress",
+  "Photoshop",
+  "Illustrator",
+  "Blender",
+  "Figma",
+] as const;

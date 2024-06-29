@@ -5,18 +5,33 @@ import { useSectionInView } from "@/lib/hooks";
 import React from "react";
 import { motion } from "framer-motion";
 
+const containerVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+    },
+  },
+};
+
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
     y: 100,
   },
-  animate: (index: number) => ({
+  animate: {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.06 * index,
+      type: "spring",
+      stiffness: 440,
+      damping: 22,
+      duration: 0.05,
     },
-  }),
+  },
 };
 
 export default function Skills() {
@@ -31,23 +46,25 @@ export default function Skills() {
         Skills
       </h2>
 
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <motion.ul
+        variants={containerVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+        }}
+        className="flex flex-wrap justify-center gap-2 text-lg text-gray-800"
+      >
         {skills.map((skill, index) => (
           <motion.li
             key={index}
             variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
             className="bg-white px-5 py-3 border border-black/[0.1] rounded-xl"
           >
             {skill}
           </motion.li>
         ))}
-      </ul>
+      </motion.ul>
     </section>
   );
 }
