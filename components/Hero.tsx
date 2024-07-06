@@ -9,7 +9,7 @@ import Link from "next/link";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Hero() {
- const {ref} = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Home", 0.5);
 
   return (
     <section
@@ -61,7 +61,7 @@ export default function Hero() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
-          focus:scale-110 hover:scale-110 hover:bg-gray-950 transition"
+          focus:scale-110  active:scale-105 hover:scale-110 hover:bg-gray-950 transition"
         >
           Get in touch{" "}
           <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
@@ -69,7 +69,7 @@ export default function Hero() {
         <Link
           href="/resume"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
-          focus:scale-110 hover:scale-110 transition border border-black/10"
+          focus:scale-110 active:scale-105 hover:scale-110 transition border border-black/10"
         >
           My resume{" "}
           <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
