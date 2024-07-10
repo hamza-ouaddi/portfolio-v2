@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/lib/actions/contact.action";
+import SubmitButton from "./ui/SubmitButton";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact", 0.75);
@@ -56,13 +56,7 @@ export default function Contact() {
           maxLength={1024}
           className="h-56 my-3 p-4 rounded-lg border border-black/10 resize-none"
         ></textarea>
-        <button
-          type="submit"
-          className="group flex justify-center items-center gap-2 h-12 w-32 bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 active:scale-105 hover:scale-110 hover:bg-gray-950"
-        >
-          Submit{" "}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </button>
+        <SubmitButton />
       </form>
     </motion.section>
   );
