@@ -8,8 +8,8 @@ import React from "react";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendEmail(formData: FormData) {
-  const contactEmail = formData.get("contactEmail")  as string;
-  const contactMessage = formData.get("contactMessage")  as string;
+  const contactEmail = formData.get("contactEmail") as string;
+  const contactMessage = formData.get("contactMessage") as string;
 
   if (!contactFormInputValidation(contactEmail, 250)) {
     return {
