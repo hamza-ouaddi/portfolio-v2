@@ -7,7 +7,7 @@ import React from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function sendEmail(formData: FormData) {
+export const sendEmail = async (formData: FormData) => {
   const contactEmail = formData.get("contactEmail") as string;
   const contactMessage = formData.get("contactMessage") as string;
 
@@ -24,18 +24,27 @@ export async function sendEmail(formData: FormData) {
   }
 
   try {
-    await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: "Contact <onboarding@resend.dev>",
       to: "hamza0addi@gmail.com",
-      subject: "Hello world",
-      reply_to: contactEmail as string,
-      text: contactMessage as string,
+      subject: "Message from personal website",
+      reply_to: contactEmail,
+      text: contactMessage,
       react: React.createElement(ContactFormEmail, {
         contactEmail,
         contactMessage,
       }),
     });
-  } catch (error) {
-    throw error;
+
+    if (error) {
+      return {
+        error: error.message || "An unknown error occurred.",
+      };
+    }
+    return {
+      data,
+    };
+  } catch (error: unknown) {
+    return { error: `Failed to send email: ${(error as Error).message}` };
   }
-}
+};
