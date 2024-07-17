@@ -53,13 +53,13 @@ export default function Skills() {
         viewport={{
           once: true,
         }}
-        className="flex flex-wrap justify-center gap-2 text-lg text-gray-800"
+        className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 dark:text-white/80"
       >
         {skills.map((skill, index) => (
           <motion.li
             key={index}
             variants={fadeInAnimationVariants}
-            className="bg-white px-5 py-3 border border-black/[0.1] rounded-xl"
+            className="bg-white dark:bg-white/10 px-5 py-3 border border-black/[0.1] rounded-xl"
           >
             {skill}
           </motion.li>

@@ -31,16 +31,18 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section
-        className="relative bg-gray-100 hover:bg-gray-200 transition max-w-2xl rounded-lg border border-black/5 
+        className="relative bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 transition max-w-2xl rounded-lg border border-black/5 
       overflow-hidden mb-3 sm:mb-8 last:mb-0 sm:pr-8 sm:h-80 group-even:pl-8"
       >
-        <div className="flex flex-col h-full pt-4 pb-6 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[55%] group-even:ml-72">
+        <div className="flex flex-col h-full pt-4 pb-6 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[58%] group-even:ml-[16rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 text-gray-700 leading-relaxed">{description}</p>
+          <p className="mt-2 text-gray-700 dark:text-white/70 leading-relaxed">
+            {description}
+          </p>
           <ul className="flex flex-wrap gap-2  sm:mt-auto">
             {technologies.map((technology, index) => (
               <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white dark:text-white/70 rounded-full"
                 key={index}
               >
                 {technology}
