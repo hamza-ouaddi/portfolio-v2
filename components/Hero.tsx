@@ -74,29 +74,30 @@ export default function Hero() {
           My resume{" "}
           <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
         </Link>
-
-        <Link
-          href="https://www.linkedin.com/in/hamza-ouaddi/"
-          className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
+        <div className="flex flex-row items-center justify-center gap-2">
+          <Link
+            href="https://www.linkedin.com/in/hamza-ouaddi/"
+            className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
           focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition border border-black/10"
-        >
-          <BsLinkedin />
-        </Link>
-        <Link
-          href="https://github.com/hamza-ouaddi"
-          target="_blank"
-          className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
+          >
+            <BsLinkedin />
+          </Link>
+          <Link
+            href="https://github.com/hamza-ouaddi"
+            target="_blank"
+            className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
           focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition border border-black/10"
-        >
-          <BsGithub />
-        </Link>
-        <Link
-          href="https://dribbble.com/hamza_adi"
-          className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
+          >
+            <BsGithub />
+          </Link>
+          <Link
+            href="https://dribbble.com/hamza_adi"
+            className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
           focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition border border-black/10"
-        >
-          <BsDribbble />
-        </Link>
+          >
+            <BsDribbble />
+          </Link>
+        </div>
       </motion.div>
     </section>
   );
