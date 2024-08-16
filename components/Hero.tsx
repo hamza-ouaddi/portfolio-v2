@@ -15,7 +15,7 @@ export default function Hero() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 text-center w-[72rem] sm:mb-0 scroll-mt-96"
+      className="mb-28 text-center xl:w-[72rem] max-w-[72rem] sm:mb-0 scroll-mt-96"
     >
       <div className="flex justify-start items-center">
         <motion.div
@@ -54,24 +54,26 @@ export default function Hero() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="flex flex-col sm:flex-row items-center justify-start gap-2 px-4 text-lg font-medium "
+        className="flex flex-col sm:flex-row items-center justify-start gap-4 sm:gap-2 px-4 text-lg font-medium "
       >
-        <Link
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-[10px] outline-none 
+        <div className="flex max-sm:flex-col gap-4 sm:gap-2 max-sm:items-center max-sm:w-full">
+          <Link
+            href="#contact"
+            className="group max-sm:w-full bg-gray-900 dark:border dark:border-white/10 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-[10px] outline-none 
           focus:scale-110 hover:scale-105 hover:bg-gray-950 transition"
-        >
-          Get in touch{" "}
-          <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
-        </Link>
-        <Link
-          href="/resume"
-          className="group bg-white dark:bg-white/10 px-7 py-3 flex items-center gap-2 rounded-[10px] outline-none 
+          >
+            Get in touch{" "}
+            <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
+          </Link>
+          <Link
+            href="/resume"
+            className="group max-sm:w-full bg-white dark:bg-white/10 px-7 py-3 flex items-center justify-center gap-2 rounded-[10px] outline-none 
           focus:scale-110 hover:scale-105 transition border border-black/10"
-        >
-          My resume{" "}
-          <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
-        </Link>
+          >
+            My resume{" "}
+            <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
+          </Link>
+        </div>
         <div className="flex flex-row items-center justify-center gap-2">
           <Link
             href="https://www.linkedin.com/in/hamza-ouaddi/"
