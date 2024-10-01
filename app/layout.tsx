@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
@@ -8,9 +8,11 @@ import Footer from "@/components/Footer";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import ThemeContextProvider from "@/context/theme-context";
 import Image from "next/image";
-import heroBackground from "@/public/assets/images/layout-background.png";
+import heroBackground from "@/public/assets/images/layout-background.svg";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Hamza Ouaddi",
@@ -25,10 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} relative bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-gray-50 pt-28 sm:pt-36`}
+        className={`${manrope.className} relative bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-gray-50 pt-28 sm:pt-36 overflow-x-hidden`}
       >
-        <div className="absolute flex justify-center top-0 inset-x-0 -z-10 w-full h-[640px] overflow-hidden ">
-          <div className="w-[1440px] h-full flex-shrink-0">
+        <div className="absolute flex justify-center top-0 right-0 -z-10 h-[1080px] overflow-hidden layout-background">
+          <div className="w-full h-full flex-shrink-0">
             <Image
               src={heroBackground}
               alt="Gradient background"
