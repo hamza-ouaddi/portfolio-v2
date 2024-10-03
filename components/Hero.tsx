@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import personalImage from "@/public/assets/images/my-image.jpg";
 import { motion } from "framer-motion";
 import { BsArrowRight, BsDribbble, BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
@@ -61,20 +60,6 @@ function ModernHero() {
 
       <div className=" flex flex-col items-end justify-between ">
         <div className="flex justify-end items-center gap-4 w-[100%] sm:w-[80%] md:w-[80%] lg:w-[50%]">
-          {/* <div className="flex justify-start items-center min-w-fit">
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ type: "tween", duration: 0.2 }}
-            >
-              <Image
-                src={personalImage}
-                alt="Hamza Ouaddi's Image"
-                priority={true}
-                className="h-36 w-36 rounded-full shadow-xl object-cover"
-              />
-            </motion.div>
-          </div> */}
           <motion.p
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -91,56 +76,6 @@ function ModernHero() {
             visually appealing.
           </motion.p>
         </div>
-
-        {/* <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="flex flex-col sm:flex-row items-center justify-start w-[46%] gap-4 sm:gap-2 text-lg font-medium "
-        >
-          <div className="flex max-sm:flex-col gap-4 sm:gap-2 max-sm:items-center max-sm:w-full">
-            <Link
-              href="#contact"
-              className="group max-sm:w-full bg-gray-900 dark:border dark:border-white/10 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-[10px] outline-none 
-            focus:scale-110 hover:scale-105 hover:bg-gray-950 transition"
-            >
-              Get in touch{" "}
-              <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
-            </Link>
-            <Link
-              href="/resume"
-              className="group max-sm:w-full bg-white dark:bg-white/10 px-7 py-3 flex items-center justify-center gap-2 rounded-[10px] outline-none 
-            focus:scale-110 hover:scale-105 transition border border-black/10"
-            >
-              My resume{" "}
-              <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
-            </Link>
-          </div>
-          <div className="flex flex-row items-center justify-center gap-2">
-            <Link
-              href="https://www.linkedin.com/in/hamza-ouaddi/"
-              className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
-            focus:scale-[1.15] hover:scale-[1.10]  hover:text-gray-950 transition border border-black/10"
-            >
-              <BsLinkedin />
-            </Link>
-            <Link
-              href="https://github.com/hamza-ouaddi"
-              target="_blank"
-              className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
-            focus:scale-[1.15] hover:scale-[1.10] hover:text-gray-950 transition border border-black/10"
-            >
-              <BsGithub />
-            </Link>
-            <Link
-              href="https://dribbble.com/hamza_adi"
-              className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
-            focus:scale-[1.15] hover:scale-[1.10] hover:text-gray-950 transition border border-black/10"
-            >
-              <BsDribbble />
-            </Link>
-          </div>
-        </motion.div> */}
       </div>
     </section>
   );
