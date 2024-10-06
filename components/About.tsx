@@ -16,7 +16,7 @@ const containerVariants = {
   initial: {},
   animate: {
     transition: {
-      delayChildren: 0.6,
+      delayChildren: 0,
       staggerChildren: 0.2,
     },
   },
@@ -40,9 +40,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
+  
       className="flex flex-col justify-center items-center gap-8 w-full text-left leading-8  lg:h-[46vh] px-[2%] sm:px-[5%] max-lg:my-28 lg:mb-40 scroll-mt-28"
       id="about"
     >
@@ -53,6 +51,7 @@ export default function About() {
           whileInView="animate"
           viewport={{
             once: true,
+            amount: 0.8
           }}
           className="flex items-center w-fit"
         >
@@ -82,6 +81,7 @@ export default function About() {
           whileInView="animate"
           viewport={{
             once: true,
+            amount: 0.8
           }}
           className="md:w-[80%] lg:w-[50%]"
         >
