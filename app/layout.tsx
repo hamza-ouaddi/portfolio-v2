@@ -9,6 +9,8 @@ import ThemeSwitch from "@/components/ThemeSwitch";
 import ThemeContextProvider from "@/context/theme-context";
 import Image from "next/image";
 import heroBackground from "@/public/assets/images/layout-background.svg";
+import ReactLenis from "lenis/react";
+import "lenis/dist/lenis.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,13 +42,18 @@ export default function RootLayout({
         </div>
 
         <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-            <Toaster />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
+          <ReactLenis
+            root
+            options={{ lerp: 0.1, duration: 1.5, smoothWheel: true }}
+          >
+            <ActiveSectionContextProvider>
+              <Header />
+              {children}
+              <Footer />
+              <Toaster />
+              <ThemeSwitch />
+            </ActiveSectionContextProvider>
+          </ReactLenis>
         </ThemeContextProvider>
       </body>
     </html>
