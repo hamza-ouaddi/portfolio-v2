@@ -47,77 +47,22 @@ export const links = [
 
 export const projects = [
   {
-    id: "graphic-design-04",
-    image: creativeEyeBranding,
-    title: "CreativEye Studio Brand Identity",
-    description: "Brand Identity for Creative Studio.",
-    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
-    link: "https://dribbble.com/shots/22272622-CreativEye-Studio-Brand-Identity",
-    category: "Graphic Design",
-  },
-  {
-    id: "graphic-design-03",
-    image: hopeBranding,
-    title: "Hope Advertising Agency Brand",
-    description: "Branding for Marketing Agency.",
-    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
-    link: "https://dribbble.com/shots/22008588-Hope-Advertising-Agency-Brand",
-    category: "Graphic Design",
-  },
-  {
-    id: "graphic-design-02",
-    image: mbouaBranding,
-    title: "M'BOUA | Natural mineral water brand",
-    description: "Branding for Natural mineral water company.",
-    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
-    link: "https://dribbble.com/shots/22008549-M-BOUA-Natural-mineral-water-brand",
-    category: "Graphic Design",
-  },
-  {
-    id: "graphic-design-01",
-    image: personalBranding,
-    title: "Personal Branding",
-    description: "Personal Hamza Ouâddi Branding.",
-    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
-    link: "https://www.behance.net/gallery/148307495/Personal-Branding",
-    category: "Graphic Design",
-  },
-  {
-    id: "ui-ux-4",
+    id: "dev-14",
     image: issueTrackerUI,
-    title: "Issue Tracker Dashboard UI Design",
-    description: "A web app UI design for Issue tracking and management.",
-    technologies: ["Figma"],
-    link: "https://dribbble.com/shots/23573917-Issue-Tracker-Dashboard-UI-Design",
-    category: "UI/UX",
-  },
-  {
-    id: "ui-ux-3",
-    image: atlasEstateui,
-    title: "Atlas Estate Website Design",
-    description: "UI web design for a real estate platform.",
-    technologies: ["Figma"],
-    link: "https://dribbble.com/shots/23136344-Atlas-Estate-Website-Design",
-    category: "UI/UX",
-  },
-  {
-    id: "ui-ux-02",
-    image: schoolWebpageUI,
-    title: "School Homepage UI Concept",
-    description: "school UI webpage design.",
-    technologies: ["Figma"],
-    link: "https://dribbble.com/shots/23081744-School-Homepage-UI-Concept",
-    category: "UI/UX",
-  },
-  {
-    id: "ui-ux-01",
-    image: colabUI,
-    title: "CoLab",
+    title: "Issue Tracker",
     description:
-      "CoLab, a platform for discovering gigs and job offers, built with PHP Laravel and Tailwind CSS.",
-    technologies: ["Figma"],
-    link: "https://dribbble.com/shots/22505281-Colab-Post-Discover-Job-Offers-UI-Web-Design",
-    category: "UI/UX",
+      "Issue Tracker is an ultimate solution for efficient issue tracking and management built with Next.js, TypeScript, Tailwind CSS, and Prisma.",
+    technologies: [
+      "Next.js",
+      "Typescript",
+      "Prisma",
+      "Tailwind CSS",
+      "Radix UI",
+    ],
+    link: "https://issue-tracker-project.vercel.app",
+    repo: "https://github.com/hamza-ouaddi/issue-tracker",
+    category: "Development",
+    preferred: true,
   },
   {
     id: "dev-13",
@@ -129,6 +74,7 @@ export const projects = [
     link: "https://tech-hub-tau.vercel.app/",
     repo: "https://github.com/hamza-ouaddi/tech-hub",
     category: "Development",
+    preferred: true,
   },
   {
     id: "dev-12",
@@ -149,6 +95,7 @@ export const projects = [
     link: "https://github.com/hamza-ouaddi/atlas-estate-website",
     repo: "https://github.com/hamza-ouaddi/atlas-estate-website",
     category: "Development",
+    preferred: true,
   },
   {
     id: "dev-11",
@@ -160,6 +107,7 @@ export const projects = [
     link: "https://github.com/hamza-ouaddi/CoLab",
     repo: "https://github.com/hamza-ouaddi/CoLab",
     category: "Development",
+    preferred: true,
   },
 
   {
@@ -172,6 +120,7 @@ export const projects = [
     link: "https://github.com/hamza-ouaddi/Stock-Management-System",
     repo: "https://github.com/hamza-ouaddi/Stock-Management-System",
     category: "Development",
+    preferred: false,
   },
 
   {
@@ -184,6 +133,7 @@ export const projects = [
     link: "https://secretly-social-network.onrender.com/",
     repo: "https://github.com/hamza-ouaddi/Secretly-Social-Network",
     category: "Development",
+    preferred: false,
   },
 
   {
@@ -196,6 +146,7 @@ export const projects = [
     link: "https://keeper-app-one-iota.vercel.app/",
     repo: "https://github.com/hamza-ouaddi/keeper-app",
     category: "Development",
+    preferred: false,
   },
 
   {
@@ -216,6 +167,7 @@ export const projects = [
     link: "https://to-do-list-4fft.onrender.com",
     repo: "https://github.com/hamza-ouaddi/To-Do-List",
     category: "Development",
+    preferred: false,
   },
 
   {
@@ -228,6 +180,7 @@ export const projects = [
     link: "https://hamza-ouaddi.github.io/Weather-App/",
     repo: "https://github.com/hamza-ouaddi/Weather-App",
     category: "Development",
+    preferred: false,
   },
   {
     id: "dev-05",
@@ -246,6 +199,7 @@ export const projects = [
     link: "https://hamza-ouaddi.github.io/Weather-App/",
     repo: "https://github.com/hamza-ouaddi/Blog-Website",
     category: "Development",
+    preferred: false,
   },
 
   {
@@ -258,8 +212,8 @@ export const projects = [
     link: "https://newsletter-signup-puce.vercel.app/",
     repo: "https://github.com/hamza-ouaddi/Newsletter-Signup",
     category: "Development",
+    preferred: false,
   },
-
   {
     id: "dev-03",
     image: networkWebsite,
@@ -269,6 +223,7 @@ export const projects = [
     link: "https://hamza-ouaddi.github.io/Network/",
     repo: "https://github.com/hamza-ouaddi/Network",
     category: "Development",
+    preferred: false,
   },
 
   {
@@ -280,6 +235,7 @@ export const projects = [
     link: "https://hamza-ouaddi.github.io/Caroline-Aubrey-Architect-Portfolio/",
     repo: "https://github.com/hamza-ouaddi/Caroline-Aubrey-Architect-Portfolio",
     category: "Development",
+    preferred: false,
   },
 
   {
@@ -291,6 +247,88 @@ export const projects = [
     link: "https://hamza-ouaddi.github.io/Minty/",
     repo: "https://github.com/hamza-ouaddi/Minty",
     category: "Development",
+    preferred: false,
+  },
+  {
+    id: "ui-ux-4",
+    image: issueTrackerUI,
+    title: "Issue Tracker Dashboard UI Design",
+    description: "A web app UI design for Issue tracking and management.",
+    technologies: ["Figma"],
+    link: "https://dribbble.com/shots/23573917-Issue-Tracker-Dashboard-UI-Design",
+    category: "UI/UX",
+    preferred: false,
+  },
+  {
+    id: "ui-ux-3",
+    image: atlasEstateui,
+    title: "Atlas Estate Website Design",
+    description: "UI web design for a real estate platform.",
+    technologies: ["Figma"],
+    link: "https://dribbble.com/shots/23136344-Atlas-Estate-Website-Design",
+    category: "UI/UX",
+    preferred: false,
+  },
+  {
+    id: "ui-ux-02",
+    image: schoolWebpageUI,
+    title: "School Homepage UI Concept",
+    description: "school UI webpage design.",
+    technologies: ["Figma"],
+    link: "https://dribbble.com/shots/23081744-School-Homepage-UI-Concept",
+    category: "UI/UX",
+    preferred: true,
+  },
+  {
+    id: "ui-ux-01",
+    image: colabUI,
+    title: "CoLab",
+    description:
+      "CoLab, a platform for discovering gigs and job offers, built with PHP Laravel and Tailwind CSS.",
+    technologies: ["Figma"],
+    link: "https://dribbble.com/shots/22505281-Colab-Post-Discover-Job-Offers-UI-Web-Design",
+    category: "UI/UX",
+    preferred: false,
+  },
+  {
+    id: "graphic-design-04",
+    image: creativeEyeBranding,
+    title: "CreativEye Studio Brand Identity",
+    description: "Brand Identity for Creative Studio.",
+    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+    link: "https://dribbble.com/shots/22272622-CreativEye-Studio-Brand-Identity",
+    category: "Graphic Design",
+    preferred: false,
+  },
+  {
+    id: "graphic-design-03",
+    image: hopeBranding,
+    title: "Hope Advertising Agency Brand",
+    description: "Branding for Marketing Agency.",
+    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+    link: "https://dribbble.com/shots/22008588-Hope-Advertising-Agency-Brand",
+    category: "Graphic Design",
+    preferred: false,
+  },
+  {
+    id: "graphic-design-02",
+    image: mbouaBranding,
+    title: "M'BOUA | Natural mineral water brand",
+    description: "Branding for Natural mineral water company.",
+    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+    link: "https://dribbble.com/shots/22008549-M-BOUA-Natural-mineral-water-brand",
+    category: "Graphic Design",
+    preferred: false,
+  },
+  {
+    id: "graphic-design-01",
+    image: personalBranding,
+    title: "Personal Branding",
+    description: "Personal Hamza Ouâddi Branding.",
+    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+    link: "https://www.behance.net/gallery/148307495/Personal-Branding",
+    category: "Graphic Design",
+    preferred: false,
   },
 ] as const;
 
