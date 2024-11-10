@@ -8,7 +8,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col items-center">
       <Hero />
       <SectionDivider />
       <About />

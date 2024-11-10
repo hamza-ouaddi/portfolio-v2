@@ -1,3 +1,4 @@
+import { SkillsProps } from "./types";
 import minty from "@/public/assets/Portfolio/development/minty.png";
 import architectWebsite from "@/public/assets/Portfolio/development/architect-website.png";
 import networkWebsite from "@/public/assets/Portfolio/development/network-website.png";
@@ -332,24 +333,49 @@ export const projects = [
   },
 ] as const;
 
-export const skills = [
-  "HTML5",
-  "CSS3",
-  "Bootstrap",
-  "Sass",
-  "Tailwind CSS",
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Vue.js",
-  "Node.js",
-  "PHP Laravel",
-  "C#",
-  "MongoDB",
-  "SQL & MySQL",
-  "WordPress",
-  "Photoshop",
-  "Illustrator",
-  "Blender",
-  "Figma",
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaSass,
+  FaReact,
+  FaVuejs,
+  FaNodeJs,
+  FaLaravel,
+  FaWordpress,
+  FaFigma,
+} from "react-icons/fa6";
+import {
+  SiTailwindcss,
+  SiJavascript,
+  SiNextdotjs,
+  SiCsharp,
+  SiMongodb,
+  SiMysql,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiBlender,
+} from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+
+export const skills: SkillsProps[] = [
+  { name: "HTML5", icon: FaHtml5 },
+  { name: "CSS3", icon: FaCss3Alt },
+  { name: "Bootstrap", icon: FaBootstrap },
+  { name: "Sass", icon: FaSass },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "React", icon: FaReact },
+  { name: "Next.js", icon: SiNextdotjs },
+  { name: "Vue.js", icon: FaVuejs },
+  { name: "Node.js", icon: FaNodeJs },
+  { name: "PHP Laravel", icon: FaLaravel },
+  { name: "C#", icon: SiCsharp },
+  { name: "MongoDB", icon: SiMongodb },
+  { name: "SQL & MySQL", icon: GrMysql },
+  { name: "WordPress", icon: FaWordpress },
+  { name: "Photoshop", icon: SiAdobephotoshop },
+  { name: "Illustrator", icon: SiAdobeillustrator },
+  { name: "Blender", icon: SiBlender },
+  { name: "Figma", icon: FaFigma },
 ] as const;
