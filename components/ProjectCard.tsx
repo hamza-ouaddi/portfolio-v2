@@ -38,13 +38,13 @@ export default function ProjectCard({
       style={{
         scale: scaleProgress,
       }}
-      className="group flex  h-[100vh] sticky top-0"
+      className="group flex items-start h-[100vh] sticky top-0"
     >
       <section
         style={{
           top: `calc(10% + ${order * 40}px)`,
         }}
-        className="relative mb-3 sm:mb-8 last:mb-0 max-w-[1200px] mx-auto lg:min-h-[600px] lg:h-[520px] flex lg:items-center flex-col-reverse lg:flex-row lg:group-even:flex-row-reverse 
+        className="relative mb-3 sm:mb-8 last:mb-6  max-w-[1200px] mx-auto lg:min-h-[600px] lg:h-[520px] flex lg:items-center flex-col-reverse lg:flex-row lg:group-even:flex-row-reverse 
         bg-gradient-to-tr group-even:bg-gradient-to-tl from-gray-100 from-40% to-indigo-200 to-100%  dark:from-white/10 dark:to-indigo-400  transition rounded-2xl  border-black/5 
       overflow-hidden h-fit w-full container-shadow"
       >

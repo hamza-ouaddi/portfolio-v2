@@ -1,7 +1,6 @@
 "use client";
 import { projects } from "@/lib/data";
-import Image from "next/image";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useInView } from "react-intersection-observer";
 import { useSectionInView } from "@/lib/hooks";
@@ -9,7 +8,7 @@ import ProjectCard from "./ProjectCard";
 import { useScroll } from "framer-motion";
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.4);
+  const { ref } = useSectionInView("Projects", 0.1);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -21,10 +20,10 @@ export default function Projects() {
     <section
       ref={ref}
       id="projects"
-      className="flex flex-col justify-center items-center scroll-mt-28 mb-28  w-full px-[2%] sm:px-[5%]"
+      className="flex flex-col justify-center items-center scroll-mt-28 mb-0 md:mb-28 w-full px-[2%] sm:px-[5%]"
     >
-      <h2 className="text-3xl text-center font-medium capitalize mb-8">
-        Projects
+      <h2 className="text-4xl sm:text-6xl font-semibold !leading-[1.5] overflow-clip inline-block capitalize mb-4">
+        Selected Projects
       </h2>
       <div ref={containerRef} className="w-full">
         {projects
