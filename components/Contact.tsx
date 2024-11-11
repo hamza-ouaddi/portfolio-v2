@@ -44,19 +44,26 @@ export default function Contact() {
         once: true,
       }}
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%, 38rem)] text-center"
+      className="flex flex-col md:flex-row my-auto justify-between mb-20 sm:mb-28 w-full px-[2%] sm:px-[5%] "
     >
-      <h2 className="text-3xl text-center font-medium capitalize mb-2">
-        Contact me
-      </h2>
-      <p className="text-gray-700 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a href="mailto:hamzaouaddi04@gmail.com" className="underline"></a>{" "}
-        hamzaouaddi04@gmail.com or through this form
-      </p>
+      <div>
+        <h2 className="text-[12vw] sm:text-[6.75vw] font-medium ">
+          Get in touch
+        </h2>
+        <p className="text-gray-700 dark:text-white/80 w-[480px] text-[4.25vw] md:text-[1.25vw]">
+          Feel free to reach out for an opportunity, collaborate, or have a
+          chat.
+        </p>
 
+        <a
+          href="mailto:hamzaouaddi04@gmail.com"
+          className="underline text-[4vw] md:text-[1vw]"
+        >
+          hamzaouaddi04@gmail.com
+        </a>
+      </div>
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="mt-10 flex flex-col w-full md:w-1/2 dark:text-black"
         action={async (formData) => {
           await handleSubmit(formData);
         }}
@@ -67,14 +74,14 @@ export default function Contact() {
           placeholder="Your email"
           required
           maxLength={250}
-          className="h-14 px-4 rounded-lg border border-black/10 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
+          className="h-14 px-4 rounded-lg border border-black/10 dark:text-white/70 dark:bg-white dark:bg-white/10  dark:focus:bg-white/15 dark:focus:outline-white/70 dark:outline-none"
         />
         <textarea
           placeholder="Your message"
           name="contactMessage"
           required
           maxLength={1024}
-          className="h-56 my-3 p-4 rounded-lg border border-black/10 resize-none dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
+          className="h-56 my-3 p-4 rounded-lg transition-all border border-black/10 resize-none dark:text-white/70 dark:bg-white dark:bg-white/10  dark:focus:bg-white/15 dark:focus:outline-white/70 dark:outline-none"
         ></textarea>
         <SubmitButton />
       </form>
