@@ -81,10 +81,7 @@
   }
 
   .container-shadow {
-    box-shadow: rgba(0, 0, 0, 0.02) 0px -31px 20px 0px,
-      rgba(0, 0, 0, 0.01) 0px 47px 19px 0px,
-      rgba(0, 0, 0, 0.02) 0px 26px 16px 0px,
-      rgba(0, 0, 0, 0.03) 0px 12px 12px 0px, rgba(0, 0, 0, 0.04) 0px 3px 6px 0px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   }
 
   .secondary-container-shadow {
