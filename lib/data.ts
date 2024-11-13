@@ -351,7 +351,6 @@ import {
   SiNextdotjs,
   SiCsharp,
   SiMongodb,
-  SiMysql,
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiBlender,
