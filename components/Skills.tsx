@@ -47,7 +47,7 @@ export default function Skills() {
         viewport={{
           once: true,
         }}
-        className="text-4xl sm:text-6xl font-semibold !leading-[1.5] overflow-clip inline-block capitalize mb-24"
+        className="text-[10vw] md:text-[4vw] font-semibold !leading-[1.5] overflow-clip inline-block capitalize mb-24"
       >
         Skills
       </motion.h2>
