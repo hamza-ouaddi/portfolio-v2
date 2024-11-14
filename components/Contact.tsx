@@ -78,7 +78,7 @@ export default function Contact() {
         once: true,
       }}
       id="contact"
-      className="flex items-center mb-20 sm:mb-28 w-full px-[4%] sm:px-[5%] h-[80vh] sm:h-[72vh] md:h-[46vh] 2xl:h-[72vh] "
+      className="flex items-center mb-20 sm:mb-28 w-full px-[4%] sm:px-[5%] h-[80vh] sm:h-[72vh] "
     >
       <div className="flex flex-col w-full md:flex-row justify-between">
         <motion.div

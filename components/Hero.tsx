@@ -37,7 +37,7 @@ function ModernHero() {
     <section
       ref={ref}
       id="home"
-      className="flex flex-col gap-4 md:gap-8 lg:gap-12 xl:gap-24 justify-center mb-28 text-center w-full h-[44vh] sm:h-[72vh] md:h-[46vh] 2xl:h-[72vh] px-[2%] sm:px-[5%] sm:mb-0 scroll-mt-96"
+      className="flex flex-col gap-4 md:gap-8 lg:gap-12 xl:gap-24 justify-center text-center w-full h-[72vh] 2xl:h-[86vh] px-[2%] sm:px-[5%] sm:mb-0 scroll-mt-96"
     >
       <motion.h1
         variants={headingContainer}
@@ -68,7 +68,7 @@ function ModernHero() {
               delay: 0.8,
               duration: 1,
             }}
-            className=" text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] xl:text-[1.25vw] text-left font-normal leading-[1.4]"
+            className=" text-[1.25em] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] xl:text-[1.25vw] text-left font-normal leading-[1.4]"
           >
             Hi, I'm Hamza — a developer and designer. I'm Passionate about
             creating digital experiences that merge technical expertise with

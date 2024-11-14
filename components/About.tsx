@@ -40,8 +40,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-  
-      className="flex flex-col justify-center items-center gap-8 w-full text-left leading-8  lg:h-[46vh] px-[2%] sm:px-[5%] max-lg:my-28 lg:mb-40 scroll-mt-28"
+      className="flex flex-col justify-center items-center gap-8 w-full text-left leading-8 lg:h-[75vh] px-[2%] sm:px-[5%] max-lg:my-28 lg:mb-40 scroll-mt-28"
       id="about"
     >
       <div className="flex flex-col gap-20 lg:flex-row justify-between lg:items-center min-w-fit z-10">
@@ -51,11 +50,14 @@ export default function About() {
           whileInView="animate"
           viewport={{
             once: true,
-            amount: 0.8
+            amount: 0.8,
           }}
           className="flex items-center w-fit"
         >
-          <motion.div variants={containerChildren} className="z-10 w-fit lg:w-full">
+          <motion.div
+            variants={containerChildren}
+            className="z-10 w-fit lg:w-full"
+          >
             <Image
               src={personalImage}
               alt="Hamza Ouaddi's Image"
@@ -81,7 +83,7 @@ export default function About() {
           whileInView="animate"
           viewport={{
             once: true,
-            amount: 0.8
+            amount: 0.8,
           }}
           className="md:w-[80%] lg:w-[50%]"
         >

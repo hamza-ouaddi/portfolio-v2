@@ -20,9 +20,9 @@ export default function Projects() {
     <section
       ref={ref}
       id="projects"
-      className="flex flex-col justify-center items-center scroll-mt-28 mb-0 md:mb-28 w-full px-[2%] sm:px-[5%]"
+      className="flex flex-col justify-center items-center scroll-mt-28 mb-0 md:mb-40 w-full px-[2%] sm:px-[5%]"
     >
-      <h2 className="text-4xl sm:text-6xl font-semibold !leading-[1.5] overflow-clip inline-block capitalize mb-4">
+      <h2 className="text-[10vw] md:text-[4vw] font-semibold !leading-[1.5] overflow-clip inline-block capitalize md:mb-4">
         Selected Projects
       </h2>
       <div ref={containerRef} className="w-full">
