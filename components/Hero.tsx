@@ -37,7 +37,7 @@ function ModernHero() {
     <section
       ref={ref}
       id="home"
-      className="flex flex-col gap-4 md:gap-8 lg:gap-12 xl:gap-24 justify-center text-center w-full h-[72vh] 2xl:h-[86vh] px-[2%] sm:px-[5%] sm:mb-0 scroll-mt-96"
+      className="flex flex-col gap-4 md:gap-8 lg:gap-12 xl:gap-24 justify-center text-center w-full h-[70vh] 2xl:h-[72vh] px-[2%] sm:px-[5%] sm:mb-0 mt-0 sm:mt-32 scroll-mt-96"
     >
       <motion.h1
         variants={headingContainer}

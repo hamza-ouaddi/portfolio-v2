@@ -78,7 +78,7 @@ export default function Contact() {
         once: true,
       }}
       id="contact"
-      className="flex items-center mb-20 sm:mb-28 w-full px-[4%] sm:px-[5%] h-[80vh] sm:h-[72vh] "
+      className="flex items-center mb-20 sm:mb-28 w-full px-[4%] sm:px-[5%] h-[80vh] sm:h-[72vh]"
     >
       <div className="flex flex-col w-full md:flex-row justify-between">
         <motion.div
@@ -109,7 +109,7 @@ export default function Contact() {
           viewport={{
             once: true,
           }}
-          className="mt-10 flex flex-col w-full md:w-1/2 dark:text-black p-4 lg:p-10 rounded-2xl bg-gradient-to-br from-gray-100 from-40% to-[#dbd7fb] to-100% dark:from-white/10 dark:to-indigo-400/45 container-shadow"
+          className="mt-10 flex flex-col w-full md:w-1/2 dark:text-black p-4 lg:p-10 rounded-2xl bg-gradient-to-br from-gray-100 from-40% to-[#dbd7fb] to-100% dark:from-gray-800 dark:to-indigo-400/45 container-shadow"
           action={async (formData) => {
             await handleSubmit(formData);
           }}

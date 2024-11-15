@@ -5,32 +5,32 @@ import { useSectionInView } from "@/lib/hooks";
 import React from "react";
 import { motion } from "framer-motion";
 
+const sectionTitleFadeIn = {
+  initial: { opacity: 0, y: 100 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: [0.6, 0.01, 0.05, 0.95],
+      duration: 1.5,
+    },
+  },
+};
+
+const carouselFadeIn = {
+  initial: { opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: [0.6, 0.01, 0.05, 0.95],
+      duration: 1.5,
+    },
+  },
+};
+
 export default function Skills() {
   const { ref } = useSectionInView("Skills", 0.75);
-
-  const sectionTitleFadeIn = {
-    initial: { opacity: 0, y: 100 },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        ease: [0.6, 0.01, 0.05, 0.95],
-        duration: 1.5,
-      },
-    },
-  };
-
-  const carouselFadeIn = {
-    initial: { opacity: 0 },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        ease: [0.6, 0.01, 0.05, 0.95],
-        duration: 1.5,
-      },
-    },
-  };
 
   const firstCarousel = skills.slice(0, Math.ceil(skills.length / 2));
   const secondCarousel = skills.slice(Math.ceil(skills.length / 2));
@@ -40,17 +40,19 @@ export default function Skills() {
       id="skills"
       className="relative flex flex-col justify-center w-full text-center px-[2%] sm:px-[5%] max-lg:my-28 scroll-mt-28 mb-28 sm:mb-40 overflow-x-clip"
     >
-      <motion.h2
-        variants={sectionTitleFadeIn}
-        initial="initial"
-        whileInView="animate"
-        viewport={{
-          once: true,
-        }}
-        className="text-[10vw] md:text-[4vw] font-semibold !leading-[1.5] overflow-clip inline-block capitalize mb-24"
-      >
-        Skills
-      </motion.h2>
+      <h2 className="text-[10vw] md:text-[4vw] font-semibold !leading-[1.5] overflow-clip mb-24">
+        <motion.span
+          variants={sectionTitleFadeIn}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className="inline-block"
+        >
+          Skills
+        </motion.span>
+      </h2>
 
       <div className="absolute bg-[#ffb7ff] dark:bg-[#9e5a84] top-[16rem] right-[4rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] -z-10"></div>
       <div
@@ -81,7 +83,7 @@ export default function Skills() {
           {[...firstCarousel, ...firstCarousel].map((skill, index) => (
             <motion.li
               key={index}
-              className="w-32 h-32 md:w-52 md:h-52 flex flex-col items-center justify-center gap-2 text-8xl p-4 border-white dark:border-black/40 border-opacity-40 dark:bg-gray-950 
+              className="w-32 h-32 md:w-52 md:h-52 flex flex-col items-center justify-center gap-2 text-8xl p-4 border-white dark:border-white/15 border-opacity-40 dark:bg-gray-950 
         bg-opacity-65 dark:bg-opacity-55 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] bg-white dark:bg-white/10 border border-black/[0.1] rounded-xl"
             >
               {<skill.icon />}{" "}
@@ -114,7 +116,7 @@ export default function Skills() {
           {[...secondCarousel, ...secondCarousel].map((skill, index) => (
             <motion.li
               key={index}
-              className="w-32 h-32 md:w-52 md:h-52 flex flex-col items-center justify-center gap-2 text-8xl p-4 border-white dark:border-black/40 border-opacity-40 dark:bg-gray-950 
+              className="w-32 h-32 md:w-52 md:h-52 flex flex-col items-center justify-center gap-2 text-8xl p-4 border-white dark:border-white/15 border-opacity-40 dark:bg-gray-950 
         bg-opacity-65 dark:bg-opacity-55 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] bg-white dark:bg-white/10 border border-black/[0.1] rounded-xl"
             >
               {<skill.icon />}{" "}
