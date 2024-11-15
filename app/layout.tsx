@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${manrope.className} relative bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-gray-50 pt-28 sm:pt-36 overflow-x-hidden`}
+        className={`${manrope.className} relative bg-gray-50 dark:bg-gray-900 text-gray-950 dark:text-gray-50 overflow-x-hidden`}
       >
         <div className="absolute flex justify-center top-0 right-0 -z-10 h-[1080px] overflow-hidden layout-background">
           <div className="w-full h-full flex-shrink-0">
