@@ -12,6 +12,7 @@ import stockManagementSystem from "@/public/assets/Portfolio/development/stock-m
 import colab from "@/public/assets/Portfolio/development/colab.png";
 import atlasEstate from "@/public/assets/Portfolio/development/atlas-estate.jpg";
 import techhub from "@/public/assets/Portfolio/development/techhub.jpg";
+import crazyJetBoat from "@/public/assets/Portfolio/development/crazy-jetboat.png";
 
 import colabUI from "@/public/assets/Portfolio/ui-ux/Colab-UI-Web-Design.png";
 import schoolWebpageUI from "@/public/assets/Portfolio/ui-ux/School-Website-UI.jpg";
@@ -64,6 +65,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/issue-tracker",
     category: "Development",
     preferred: true,
+    color: "#868CFF",
   },
   {
     id: "dev-13",
@@ -76,6 +78,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/tech-hub",
     category: "Development",
     preferred: true,
+    color: "#4775F1",
   },
   {
     id: "dev-12",
@@ -97,6 +100,20 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/atlas-estate-website",
     category: "Development",
     preferred: true,
+    color: "#F97432",
+  },
+  {
+    id: "dev-15",
+    image: crazyJetBoat,
+    title: "Crazy JetBoat",
+    description:
+      "CrazyJetBoat is a modern and user-friendly platform for booking boat tours across multiple destinations, equipped with admin panels for efficient management of bookings, payments, users, discounts, and loyalty points. Built with Vue.js and PHP Laravel",
+    technologies: ["Vue.js", "PHP Laravel", "Tailwind CSS"],
+    link: "https://crazyjetboat.com/",
+    repo: "#",
+    category: "Development",
+    preferred: true,
+    color: "#D34846",
   },
   {
     id: "dev-11",
@@ -109,6 +126,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/CoLab",
     category: "Development",
     preferred: true,
+    color: "#795FFC",
   },
 
   {
@@ -122,6 +140,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Stock-Management-System",
     category: "Development",
     preferred: false,
+    color: "",
   },
 
   {
@@ -135,6 +154,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Secretly-Social-Network",
     category: "Development",
     preferred: false,
+    color: "",
   },
 
   {
@@ -148,6 +168,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/keeper-app",
     category: "Development",
     preferred: false,
+    color: "",
   },
 
   {
@@ -169,6 +190,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/To-Do-List",
     category: "Development",
     preferred: false,
+    color: "",
   },
 
   {
@@ -182,6 +204,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Weather-App",
     category: "Development",
     preferred: false,
+    color: "",
   },
   {
     id: "dev-05",
@@ -201,6 +224,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Blog-Website",
     category: "Development",
     preferred: false,
+    color: "",
   },
 
   {
@@ -214,6 +238,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Newsletter-Signup",
     category: "Development",
     preferred: false,
+    color: "",
   },
   {
     id: "dev-03",
@@ -225,6 +250,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Network",
     category: "Development",
     preferred: false,
+    color: "",
   },
 
   {
@@ -237,6 +263,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Caroline-Aubrey-Architect-Portfolio",
     category: "Development",
     preferred: false,
+    color: "",
   },
 
   {
@@ -249,6 +276,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Minty",
     category: "Development",
     preferred: false,
+    color: "",
   },
   {
     id: "ui-ux-4",
@@ -259,6 +287,7 @@ export const projects = [
     link: "https://dribbble.com/shots/23573917-Issue-Tracker-Dashboard-UI-Design",
     category: "UI/UX",
     preferred: false,
+    color: "",
   },
   {
     id: "ui-ux-3",
@@ -269,16 +298,18 @@ export const projects = [
     link: "https://dribbble.com/shots/23136344-Atlas-Estate-Website-Design",
     category: "UI/UX",
     preferred: false,
+    color: "",
   },
   {
     id: "ui-ux-02",
     image: schoolWebpageUI,
     title: "School Homepage UI Concept",
-    description: "school UI webpage design.",
+    description: "School UI webpage design.",
     technologies: ["Figma"],
     link: "https://dribbble.com/shots/23081744-School-Homepage-UI-Concept",
     category: "UI/UX",
-    preferred: true,
+    preferred: false,
+    color: "",
   },
   {
     id: "ui-ux-01",
@@ -290,6 +321,7 @@ export const projects = [
     link: "https://dribbble.com/shots/22505281-Colab-Post-Discover-Job-Offers-UI-Web-Design",
     category: "UI/UX",
     preferred: false,
+    color: "",
   },
   {
     id: "graphic-design-04",
@@ -300,6 +332,7 @@ export const projects = [
     link: "https://dribbble.com/shots/22272622-CreativEye-Studio-Brand-Identity",
     category: "Graphic Design",
     preferred: false,
+    color: "",
   },
   {
     id: "graphic-design-03",
@@ -310,6 +343,7 @@ export const projects = [
     link: "https://dribbble.com/shots/22008588-Hope-Advertising-Agency-Brand",
     category: "Graphic Design",
     preferred: false,
+    color: "",
   },
   {
     id: "graphic-design-02",
@@ -320,6 +354,7 @@ export const projects = [
     link: "https://dribbble.com/shots/22008549-M-BOUA-Natural-mineral-water-brand",
     category: "Graphic Design",
     preferred: false,
+    color: "",
   },
   {
     id: "graphic-design-01",
@@ -330,6 +365,7 @@ export const projects = [
     link: "https://www.behance.net/gallery/148307495/Personal-Branding",
     category: "Graphic Design",
     preferred: false,
+    color: "",
   },
 ] as const;
 
