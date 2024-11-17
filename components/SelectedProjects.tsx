@@ -2,7 +2,7 @@
 import { projects } from "@/lib/data";
 import React, { useRef } from "react";
 import { useSectionInView } from "@/lib/hooks";
-import ProjectCard from "./ProjectCard";
+import SelectedProjectCard from "./SelectedProjectCard";
 import { useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 
@@ -53,7 +53,7 @@ export default function Projects() {
             const containerScale = 1 - (5 - index) * 0.05;
 
             return (
-              <ProjectCard
+              <SelectedProjectCard
                 key={index}
                 order={index}
                 range={[index * 0.2, 1]}
