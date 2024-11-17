@@ -2,7 +2,7 @@
 
 import { useTheme } from "@/context/theme-context";
 import { projects } from "@/lib/data";
-import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
+import { motion, useTransform, MotionValue } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -14,7 +14,7 @@ type ProjectsProps = (typeof projects)[number] & {
   preferred?: boolean;
 };
 
-export default function ProjectCard({
+export default function SelectedProjectCard({
   title,
   description,
   image,

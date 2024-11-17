@@ -47,6 +47,8 @@ export const links = [
   },
 ] as const;
 
+export const categories = ["Development", "UI/UX", "Graphic Design"] as const;
+
 export const projects = [
   {
     id: "dev-14",
