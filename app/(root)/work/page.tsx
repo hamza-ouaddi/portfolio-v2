@@ -20,7 +20,7 @@ const sectionTitleFadeIn = {
   },
 };
 
-export default function page() {
+export default function Work() {
   const [activeCategory, setActiveCategory] = useState("Development");
 
   return (
@@ -44,7 +44,7 @@ export default function page() {
             }}
             className="inline-block"
           >
-            All Projects
+            Work Portfolio
           </motion.span>
         </h2>
 
@@ -52,7 +52,7 @@ export default function page() {
           {projects
             .filter((project) => project.category === activeCategory)
             .map((project) => {
-              return <SingleWorkCard {...project} />;
+              return <SingleWorkCard key={project.id} {...project} />;
             })}
         </div>
       </section>
