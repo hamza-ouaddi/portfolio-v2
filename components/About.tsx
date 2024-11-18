@@ -11,6 +11,7 @@ import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsGithub, BsDribbble } from "react-icons/bs";
+import PrimaryLinkButton from "./ui/PrimaryLinkButton";
 
 const containerVariants = {
   initial: {},
@@ -117,21 +118,15 @@ export default function About() {
             className="flex flex-col sm:flex-row flex-wrap items-center justify-start mt-8 gap-4 sm:gap-2 text-lg font-medium "
           >
             <div className="flex max-sm:flex-col gap-4 sm:gap-2 max-sm:items-center max-sm:w-full">
-              <Link
-                href="#contact"
-                className="group max-sm:w-full bg-gray-900 dark:border dark:border-white/10 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-[10px] outline-none 
-            focus:scale-110 hover:scale-105 hover:bg-gray-950 transition"
-              >
-                Get in touch{" "}
-                <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
-              </Link>
+              <PrimaryLinkButton title="My work" />
+
               <Link
                 href="/resume"
-                className="group max-sm:w-full bg-white dark:bg-white/10 px-7 py-3 flex items-center justify-center gap-2 rounded-[10px] outline-none 
-            focus:scale-110 hover:scale-105 transition border border-black/10"
+                className="group relative flex items-center gap-2 max-sm:w-full bg-white dark:bg-white/10 px-7 py-3 rounded-full outline-none transition border border-black/10 overflow-hidden focus:scale-110 hover:scale-105"
               >
-                My resume{" "}
-                <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
+                <span className="absolute top-0 left-0 flex h-full  w-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-gray-900 group-hover:w-full"></span>
+                <span className="group-hover:text-white z-10 ">My resume</span>
+                <BsArrowRight className="group-hover:translate-x-1 group-hover:text-white transition opacity-70" />
               </Link>
             </div>
             <div className="flex flex-row items-center justify-center gap-2">
