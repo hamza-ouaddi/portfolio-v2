@@ -1,10 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import { BsArrowRight, BsDribbble, BsGithub, BsLinkedin } from "react-icons/bs";
-import Link from "next/link";
 import { useSectionInView } from "@/lib/hooks";
 
 const headingContainer = {
