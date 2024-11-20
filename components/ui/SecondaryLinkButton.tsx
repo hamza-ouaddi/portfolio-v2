@@ -1,16 +1,23 @@
 import Link from "next/link";
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
 
-function SecondaryLinkButton({ title }: { title: string }) {
+type SecondaryLinkButtonProps = {
+  title: string;
+  link: string;
+};
+
+function SecondaryLinkButton({ title, link }: SecondaryLinkButtonProps) {
   return (
     <Link
-      href="/resume"
-      className="group relative flex items-center gap-2 max-sm:w-full bg-white dark:bg-white/10 px-7 py-3 rounded-full outline-none transition border border-black/10 overflow-hidden focus:scale-110 hover:scale-105"
+      href={link}
+      className="group relative focus:scale-[1.15] hover:scale-[1.10] flex items-center justify-center h-[calc(48px+8px)] transition-all text-gray-900 dark:text-white bg-white dark:bg-white/10 border border-black/10 px-8 py-2 overflow-hidden rounded-full"
     >
-      <span className="absolute top-0 left-0 flex h-full  w-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-gray-900 group-hover:w-full"></span>
-      <span className="group-hover:text-white z-10 ">{title}</span>
-      <BsArrowRight className="group-hover:translate-x-1 group-hover:text-white transition opacity-70" />
+      <span className="relative z-10 group-hover:text-white transition-all leading-none">
+        {title}
+      </span>
+      <span className="absolute inset-0 overflow-hidden rounded-md">
+        <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-gray-700 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
+      </span>
     </Link>
   );
 }

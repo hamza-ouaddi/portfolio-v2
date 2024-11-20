@@ -12,6 +12,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsGithub, BsDribbble } from "react-icons/bs";
 import PrimaryLinkButton from "./ui/PrimaryLinkButton";
+import SecondaryLinkButton from "./ui/SecondaryLinkButton";
+import IconLinkButton from "./ui/IconLinkButton";
 
 const containerVariants = {
   initial: {},
@@ -118,40 +120,25 @@ export default function About() {
             className="flex flex-col sm:flex-row flex-wrap items-center justify-start mt-8 gap-4 sm:gap-2 text-lg font-medium "
           >
             <div className="flex max-sm:flex-col gap-4 sm:gap-2 max-sm:items-center max-sm:w-full">
-              <PrimaryLinkButton title="My work" />
+              <PrimaryLinkButton title="My work" link="/work" />
 
-              <Link
-                href="/resume"
-                className="group relative flex items-center gap-2 max-sm:w-full bg-white dark:bg-white/10 px-7 py-3 rounded-full outline-none transition border border-black/10 overflow-hidden focus:scale-110 hover:scale-105"
-              >
-                <span className="absolute top-0 left-0 flex h-full  w-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-gray-900 group-hover:w-full"></span>
-                <span className="group-hover:text-white z-10 ">My resume</span>
-                <BsArrowRight className="group-hover:translate-x-1 group-hover:text-white transition opacity-70" />
-              </Link>
+              <SecondaryLinkButton title="Resume" link="/resume" />
             </div>
-            <div className="flex flex-row items-center justify-center gap-2">
-              <Link
-                href="https://www.linkedin.com/in/hamza-ouaddi/"
-                className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
-            focus:scale-[1.15] hover:scale-[1.10]  hover:text-gray-950 transition border border-black/10"
-              >
-                <BsLinkedin />
-              </Link>
-              <Link
-                href="https://github.com/hamza-ouaddi"
-                target="_blank"
-                className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
-            focus:scale-[1.15] hover:scale-[1.10] hover:text-gray-950 transition border border-black/10"
-              >
-                <BsGithub />
-              </Link>
-              <Link
-                href="https://dribbble.com/hamza_adi"
-                className="bg-white dark:bg-white/10 p-4 text-gray-700 dark:text-white/60 flex items-center gap-2 rounded-full outline-none 
-            focus:scale-[1.15] hover:scale-[1.10] hover:text-gray-950 transition border border-black/10"
-              >
-                <BsDribbble />
-              </Link>
+            <div className="flex flex-row items-center justify-center gap-2 ">
+              <IconLinkButton
+                link="https://www.linkedin.com/in/hamza-ouaddi/"
+                icon={BsLinkedin}
+              />
+
+              <IconLinkButton
+                link="https://github.com/hamza-ouaddi"
+                icon={BsGithub}
+              />
+
+              <IconLinkButton
+                link="https://dribbble.com/hamza_adi"
+                icon={BsDribbble}
+              />
             </div>
           </motion.div>
         </motion.div>

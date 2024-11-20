@@ -28,10 +28,7 @@ export default function SelectedProjectCard({
   const containerRef = useRef<HTMLDivElement>(null);
 
   const scaleProgress = useTransform(progress, range, [1, containerScale]);
-  const { theme } = useTheme();
 
-  console.log("color:", color);
-  const gradientColor = "#9328FF";
   return (
     <motion.div
       ref={containerRef}
