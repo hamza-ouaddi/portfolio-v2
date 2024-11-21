@@ -5,6 +5,7 @@ import { useSectionInView } from "@/lib/hooks";
 import SelectedProjectCard from "./SelectedProjectCard";
 import { useScroll } from "framer-motion";
 import { motion } from "framer-motion";
+import PrimaryLinkButton from "./ui/PrimaryLinkButton";
 
 const sectionTitleFadeIn = {
   initial: { opacity: 0, y: 100 },
@@ -64,6 +65,7 @@ export default function Projects() {
             );
           })}
       </div>
+      <PrimaryLinkButton title="More projects" link="/work" />
     </section>
   );
 }

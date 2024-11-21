@@ -1,10 +1,12 @@
 "use client";
 
-import { useTheme } from "@/context/theme-context";
 import { projects } from "@/lib/data";
 import { motion, useTransform, MotionValue } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
+import { BsArrowDownRight, BsGithub } from "react-icons/bs";
+import SecondaryIconLinkButton from "./ui/SecondaryIconLinkButton";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 type ProjectsProps = (typeof projects)[number] & {
   order: number;
@@ -12,6 +14,7 @@ type ProjectsProps = (typeof projects)[number] & {
   progress: MotionValue<number>;
   containerScale: number;
   preferred?: boolean;
+  repo?: string;
 };
 
 export default function SelectedProjectCard({
@@ -19,6 +22,8 @@ export default function SelectedProjectCard({
   description,
   image,
   technologies,
+  link,
+  repo,
   color,
   order,
   progress,
@@ -48,8 +53,18 @@ export default function SelectedProjectCard({
         bg-gradient-to-tr group-even:bg-gradient-to-tl from-gray-100 from-0% to-[var(--dynamic-color)] to-100% dark:from-gray-800 dark:to-[var(--dynamic-color)] transition rounded-2xl  border-black/5 
       overflow-hidden h-fit w-full container-shadow`}
       >
-        <div className="flex flex-col h-80 md:h-full py-6 px-5 sm:py-10 sm:px-8 lg:pr-2 lg:pl-10 lg:group-even:pr-10 lg:group-even:pl-2 max-w-full lg:max-w-[58%] max-lg:bg-gray-100 max-lg:dark:bg-[#282F3C] z-10 max-lg:secondary-container-shadow">
-          <h3 className="text-3xl font-semibold">{title}</h3>
+        <div className="flex flex-col h-[340px] md:h-full py-6 px-5 sm:py-10 sm:px-8 lg:pr-2 lg:pl-10 lg:group-even:pr-10 lg:group-even:pl-2 max-w-full lg:max-w-[58%] max-lg:bg-gray-100 max-lg:dark:bg-[#282F3C] z-10 max-lg:secondary-container-shadow">
+          <div className="max-sm:flex justify-between items-start">
+            <h3 className="text-3xl font-semibold">{title}</h3>
+            <span className="flex flex-row gap-2 mt-2">
+              <SecondaryIconLinkButton
+                link={link}
+                icon={MdOutlineArrowOutward}
+                rotate="45"
+              />
+              {repo && <SecondaryIconLinkButton link={repo} icon={BsGithub} />}
+            </span>
+          </div>
           <p className=" text-gray-700 dark:text-white/70 leading-relaxed mt-auto">
             {description}
           </p>

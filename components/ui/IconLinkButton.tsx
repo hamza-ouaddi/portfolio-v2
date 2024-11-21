@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { IconType } from "react-icons";
-import { BsLinkedin } from "react-icons/bs";
 
 type IconLinkButtonProps = {
   link: string;
