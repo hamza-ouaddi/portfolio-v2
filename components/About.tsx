@@ -119,7 +119,7 @@ export default function About() {
             variants={containerChildren}
             className="flex flex-col sm:flex-row flex-wrap items-center justify-start mt-8 gap-4 sm:gap-2 text-lg font-medium "
           >
-            <div className="flex max-sm:flex-col gap-4 sm:gap-2 max-sm:items-center max-sm:w-full">
+            <div className="flex flex-row justify-center gap-4 sm:gap-2 max-sm:items-center max-sm:w-full">
               <PrimaryLinkButton title="My work" link="/work" />
 
               <SecondaryLinkButton title="Resume" link="/resume" />

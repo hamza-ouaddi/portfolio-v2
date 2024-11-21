@@ -59,11 +59,17 @@ export default function Work() {
 
       <Link
         href="/"
-        className="fixed bottom-5 right-20 w-24 h-12 flex items-center justify-center gap-2 bg-white dark:bg-gray-950 bg-opacity-80 backdrop-blur 
-    border border-white border-opacity-40 shadow-2xl rounded-full hover:scale-[1.15] active:scale-105 transition-all"
+        className="group fixed bottom-5 right-20 w-24 h-12 flex items-center justify-center gap-2 bg-white dark:bg-gray-950 bg-opacity-80 backdrop-blur 
+    border border-white border-opacity-40 shadow-2xl rounded-full hover:scale-[1.15] active:scale-105 transition-all overflow-hidden"
       >
-        <BsArrowLeft className="group-hover:-translate-x-4 transition opacity-70" />
-        Home{" "}
+        <BsArrowLeft className="group-hover:-translate-x-1 group-hover:text-white dark:group-hover:text-black transition-all opacity-70 z-10" />
+
+        <span className="relative z-10 group-hover:text-white dark:group-hover:text-black transition-all leading-none">
+          Home
+        </span>
+        <span className="absolute inset-0 overflow-hidden rounded-full">
+          <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-gray-700 dark:bg-white transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
+        </span>
       </Link>
     </>
   );
