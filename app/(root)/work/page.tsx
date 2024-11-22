@@ -34,7 +34,7 @@ export default function Work() {
         id="projects"
         className="flex flex-col justify-center items-center scroll-mt-28 w-full pt-64 px-[2%] sm:px-[5%]"
       >
-        <h2 className="text-[10vw] md:text-[4vw] font-semibold !leading-[1.5] overflow-clip mb-24">
+        <h2 className="text-[12vw] md:text-[4vw] font-semibold !leading-[1.5] overflow-clip mb-24">
           <motion.span
             variants={sectionTitleFadeIn}
             initial="initial"

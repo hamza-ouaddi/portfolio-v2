@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "3xl": "1600px",
+        "4xl": "1920px",
+      },
       colors: {
         secondaryColor: "#959CAD",
         secondaryDarkerColor: "#5b5e76",

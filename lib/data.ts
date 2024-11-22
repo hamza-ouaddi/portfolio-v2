@@ -51,7 +51,7 @@ export const categories = ["Development", "UI/UX", "Graphic Design"] as const;
 
 export const projects = [
   {
-    id: "dev-14",
+    id: "dev-15",
     image: issueTrackerUI,
     title: "Issue Tracker",
     description:
@@ -70,7 +70,7 @@ export const projects = [
     color: "#868CFF",
   },
   {
-    id: "dev-13",
+    id: "dev-14",
     image: techhub,
     title: "TechHub | IT Community Platform",
     description:
@@ -83,7 +83,7 @@ export const projects = [
     color: "#4775F1",
   },
   {
-    id: "dev-12",
+    id: "dev-13",
     image: atlasEstate,
     title: "Atlas Estate",
     description:
@@ -98,14 +98,14 @@ export const projects = [
       "Tailwind CSS",
       "Mantine UI",
     ],
-    link: "https://github.com/hamza-ouaddi/atlas-estate-website",
+    link: "https://atlas-estate.vercel.app/",
     repo: "https://github.com/hamza-ouaddi/atlas-estate-website",
     category: "Development",
     preferred: true,
     color: "#F97432",
   },
   {
-    id: "dev-15",
+    id: "dev-12",
     image: crazyJetBoat,
     title: "Crazy JetBoat",
     description:
@@ -142,25 +142,11 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Stock-Management-System",
     category: "Development",
     preferred: false,
-    color: "",
+    color: "#3263BB",
   },
 
   {
     id: "dev-09",
-    image: secretlySocialNetwork,
-    title: "Secretly Social Network",
-    description:
-      "Secretly, a social network website where people can post secretly. Built using EJS, Node.js, Express.js, MongoDB (Mongoose).",
-    technologies: ["EJS", "Node.js", "Express.js", "MongoDB"],
-    link: "https://secretly-social-network.onrender.com/",
-    repo: "https://github.com/hamza-ouaddi/Secretly-Social-Network",
-    category: "Development",
-    preferred: false,
-    color: "",
-  },
-
-  {
-    id: "dev-08",
     image: keeperApp,
     title: "Keeper App",
     description:
@@ -170,11 +156,10 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/keeper-app",
     category: "Development",
     preferred: false,
-    color: "",
+    color: "#50C4D3",
   },
-
   {
-    id: "dev-07",
+    id: "dev-08",
     image: todolist,
     title: "To Do List",
     description:
@@ -192,24 +177,23 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/To-Do-List",
     category: "Development",
     preferred: false,
-    color: "",
+    color: "#A682E2",
   },
-
   {
-    id: "dev-06",
-    image: weatherApp,
-    title: "Weather App",
+    id: "dev-07",
+    image: secretlySocialNetwork,
+    title: "Secretly Social Network",
     description:
-      "A Weather app utilizing OpenWeatherMap API for specific city weather info. Users can either input city name or enable location detection",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    link: "https://hamza-ouaddi.github.io/Weather-App/",
-    repo: "https://github.com/hamza-ouaddi/Weather-App",
+      "Secretly, a social network website where people can post secretly. Built using EJS, Node.js, Express.js, MongoDB (Mongoose).",
+    technologies: ["EJS", "Node.js", "Express.js", "MongoDB"],
+    link: "https://secretly-social-network.onrender.com/",
+    repo: "https://github.com/hamza-ouaddi/Secretly-Social-Network",
     category: "Development",
     preferred: false,
-    color: "",
+    color: "#6D63FF",
   },
   {
-    id: "dev-05",
+    id: "dev-06",
     image: blogWebsite,
     title: "Blog Website",
     description: "a Blog Website project, to create, read, and delete a post.",
@@ -222,13 +206,25 @@ export const projects = [
       "Express.js",
       "MongoDB",
     ],
-    link: "https://hamza-ouaddi.github.io/Weather-App/",
+    link: "https://blog-website-n7w3.onrender.com/",
     repo: "https://github.com/hamza-ouaddi/Blog-Website",
     category: "Development",
     preferred: false,
-    color: "",
+    color: "#67BFC1",
   },
-
+  {
+    id: "dev-05",
+    image: weatherApp,
+    title: "Weather App",
+    description:
+      "A Weather app utilizing OpenWeatherMap API for specific city weather info. Users can either input city name or enable location detection",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    link: "https://hamza-ouaddi.github.io/Weather-App/",
+    repo: "https://github.com/hamza-ouaddi/Weather-App",
+    category: "Development",
+    preferred: false,
+    color: "#90BFE6",
+  },
   {
     id: "dev-04",
     image: newsletterSignup,
@@ -240,7 +236,7 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Newsletter-Signup",
     category: "Development",
     preferred: false,
-    color: "",
+    color: "#810DA8",
   },
   {
     id: "dev-03",
@@ -252,24 +248,10 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Network",
     category: "Development",
     preferred: false,
-    color: "",
+    color: "#054FF1",
   },
-
   {
     id: "dev-02",
-    image: architectWebsite,
-    title: "Architect Portfolio",
-    description: "A landing webpage for Architect as a portfolio",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    link: "https://hamza-ouaddi.github.io/Caroline-Aubrey-Architect-Portfolio/",
-    repo: "https://github.com/hamza-ouaddi/Caroline-Aubrey-Architect-Portfolio",
-    category: "Development",
-    preferred: false,
-    color: "",
-  },
-
-  {
-    id: "dev-01",
     image: minty,
     title: "Minty",
     description: "Minty, is an application website for Tea lovers.",
@@ -278,8 +260,21 @@ export const projects = [
     repo: "https://github.com/hamza-ouaddi/Minty",
     category: "Development",
     preferred: false,
-    color: "",
+    color: "#51C195",
   },
+  {
+    id: "dev-01",
+    image: architectWebsite,
+    title: "Architect Portfolio",
+    description: "A landing webpage for Architect as a portfolio",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    link: "https://hamza-ouaddi.github.io/Caroline-Aubrey-Architect-Portfolio/",
+    repo: "https://github.com/hamza-ouaddi/Caroline-Aubrey-Architect-Portfolio",
+    category: "Development",
+    preferred: false,
+    color: "#C6CACF",
+  },
+
   {
     id: "ui-ux-4",
     image: issueTrackerUI,
@@ -289,7 +284,7 @@ export const projects = [
     link: "https://dribbble.com/shots/23573917-Issue-Tracker-Dashboard-UI-Design",
     category: "UI/UX",
     preferred: false,
-    color: "",
+    color: "#868CFF",
   },
   {
     id: "ui-ux-3",
@@ -300,7 +295,7 @@ export const projects = [
     link: "https://dribbble.com/shots/23136344-Atlas-Estate-Website-Design",
     category: "UI/UX",
     preferred: false,
-    color: "",
+    color: "#F97432",
   },
   {
     id: "ui-ux-02",
@@ -311,7 +306,7 @@ export const projects = [
     link: "https://dribbble.com/shots/23081744-School-Homepage-UI-Concept",
     category: "UI/UX",
     preferred: false,
-    color: "",
+    color: "#0055A6",
   },
   {
     id: "ui-ux-01",
@@ -323,7 +318,7 @@ export const projects = [
     link: "https://dribbble.com/shots/22505281-Colab-Post-Discover-Job-Offers-UI-Web-Design",
     category: "UI/UX",
     preferred: false,
-    color: "",
+    color: "#795FFC",
   },
   {
     id: "graphic-design-04",
@@ -334,7 +329,7 @@ export const projects = [
     link: "https://dribbble.com/shots/22272622-CreativEye-Studio-Brand-Identity",
     category: "Graphic Design",
     preferred: false,
-    color: "",
+    color: "#00E0B2",
   },
   {
     id: "graphic-design-03",
@@ -345,7 +340,7 @@ export const projects = [
     link: "https://dribbble.com/shots/22008588-Hope-Advertising-Agency-Brand",
     category: "Graphic Design",
     preferred: false,
-    color: "",
+    color: "#E91F38",
   },
   {
     id: "graphic-design-02",
@@ -356,7 +351,7 @@ export const projects = [
     link: "https://dribbble.com/shots/22008549-M-BOUA-Natural-mineral-water-brand",
     category: "Graphic Design",
     preferred: false,
-    color: "",
+    color: "#004A9F",
   },
   {
     id: "graphic-design-01",
@@ -367,7 +362,7 @@ export const projects = [
     link: "https://www.behance.net/gallery/148307495/Personal-Branding",
     category: "Graphic Design",
     preferred: false,
-    color: "",
+    color: "#84A0B1",
   },
 ] as const;
 

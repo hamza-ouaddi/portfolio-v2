@@ -46,7 +46,7 @@ export default function SingleWorkCard({
         }
         className={`relative mb-3 sm:mb-16 max-w-[1200px] lg:min-h-[600px] lg:h-[520px] flex lg:items-center flex-col-reverse lg:flex-row lg:group-even:flex-row-reverse bg-gradient-to-tr group-even:bg-gradient-to-tl from-gray-100 from-0% to-[var(--dynamic-color)] to-100% dark:from-gray-800 dark:to-[var(--dynamic-color)] transition rounded-2xl  border-black/5 overflow-hidden h-fit w-full container-shadow`}
       >
-        <div className="flex flex-col h-80 md:h-full py-6 px-5 sm:py-10 sm:px-8 lg:pr-2 lg:pl-10 lg:group-even:pr-10 lg:group-even:pl-2 max-w-full lg:max-w-[58%] max-lg:bg-gray-100 max-lg:dark:bg-[#282F3C] z-10 max-lg:secondary-container-shadow">
+        <div className="flex flex-col h-[340px] md:h-full py-6 px-5 sm:py-10 sm:px-8 lg:pr-2 lg:pl-10 lg:group-even:pr-10 lg:group-even:pl-2 max-w-full lg:max-w-[58%] lg:w-[400px] max-lg:bg-gray-100 max-lg:dark:bg-[#282F3C] z-10 max-lg:secondary-container-shadow">
           <div>
             <h3 className="text-3xl font-semibold">{title}</h3>
             <span className="flex flex-row gap-2 mt-2">
