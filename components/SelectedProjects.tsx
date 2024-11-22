@@ -34,20 +34,24 @@ export default function Projects() {
       id="projects"
       className="flex flex-col justify-center items-center scroll-mt-28 mb-0 md:mb-40 w-full px-[2%] sm:px-[5%]"
     >
-      <h2 className="text-[10vw] md:text-[4vw] font-semibold !leading-[1.5] overflow-clip">
-        <motion.span
+      <div className="overflow-clip">
+        <motion.h2
           variants={sectionTitleFadeIn}
           initial="initial"
           whileInView="animate"
           viewport={{
             once: true,
+            amount: 0.1,
           }}
-          className="inline-block"
+          className="inline-block text-[48px] md:text-[4vw] font-semibold"
         >
           Selected Work
-        </motion.span>
-      </h2>
-      <div ref={containerRef} className="w-full">
+        </motion.h2>
+      </div>
+      <div
+        ref={containerRef}
+        className="w-full flex flex-col justify-center items-center"
+      >
         {projects
           .filter((project) => project.preferred)
           .map((project, index) => {
@@ -65,7 +69,6 @@ export default function Projects() {
             );
           })}
       </div>
-      <PrimaryLinkButton title="More projects" link="/work" />
     </section>
   );
 }
