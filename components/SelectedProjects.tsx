@@ -6,6 +6,7 @@ import SelectedProjectCard from "./SelectedProjectCard";
 import { useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import PrimaryLinkButton from "./ui/PrimaryLinkButton";
+import SectionTitle from "./ui/SectionTitle";
 
 const sectionTitleFadeIn = {
   initial: { opacity: 0, y: 100 },
@@ -32,22 +33,9 @@ export default function Projects() {
     <section
       ref={ref}
       id="projects"
-      className="flex flex-col justify-center items-center scroll-mt-28 mb-0 md:mb-40 w-full px-[2%] sm:px-[5%]"
+      className="flex flex-col justify-center items-center scroll-mt-28 max-lg:my-40 mb-0 md:mb-40 w-full px-[2%] sm:px-[5%]"
     >
-      <div className="overflow-clip">
-        <motion.h2
-          variants={sectionTitleFadeIn}
-          initial="initial"
-          whileInView="animate"
-          viewport={{
-            once: true,
-            amount: 0.1,
-          }}
-          className="inline-block text-[48px] md:text-[4vw] font-semibold"
-        >
-          Selected Work
-        </motion.h2>
-      </div>
+      <SectionTitle title="Selected Projects" />
       <div
         ref={containerRef}
         className="w-full flex flex-col justify-center items-center"
@@ -69,6 +57,7 @@ export default function Projects() {
             );
           })}
       </div>
+      <PrimaryLinkButton title="More projects" link="/work" />
     </section>
   );
 }
