@@ -4,6 +4,7 @@ import { skills } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import React from "react";
 import { motion } from "framer-motion";
+import SectionTitle from "./ui/SectionTitle";
 
 const sectionTitleFadeIn = {
   initial: { opacity: 0, y: 100 },
@@ -40,19 +41,7 @@ export default function Skills() {
       id="skills"
       className="relative flex flex-col justify-center w-full text-center px-[2%] sm:px-[5%] max-lg:my-28 scroll-mt-28 mb-28 sm:mb-40 overflow-x-clip"
     >
-      <h2 className="text-[10vw] md:text-[4vw] font-semibold !leading-[1.5] overflow-clip mb-24">
-        <motion.span
-          variants={sectionTitleFadeIn}
-          initial="initial"
-          whileInView="animate"
-          viewport={{
-            once: true,
-          }}
-          className="inline-block"
-        >
-          Skills
-        </motion.span>
-      </h2>
+      <SectionTitle title="Skills" />
 
       <div className="absolute bg-[#ffb7ff] dark:bg-[#9e5a84] top-[16rem] right-[4rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] -z-10"></div>
       <div
@@ -67,7 +56,7 @@ export default function Skills() {
         viewport={{
           once: true,
         }}
-        className="flex"
+        className="flex mt-24"
       >
         <motion.div
           transition={{

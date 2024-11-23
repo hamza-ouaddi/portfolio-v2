@@ -7,6 +7,7 @@ import SingleWorkCard from "@/components/SingleWorkCard";
 import CategoryTabs from "@/components/CategoryTabs";
 import { BsArrowLeft } from "react-icons/bs";
 import Link from "next/link";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 const sectionTitleFadeIn = {
   initial: { opacity: 0, y: 100 },
@@ -34,21 +35,9 @@ export default function Work() {
         id="projects"
         className="flex flex-col justify-center items-center scroll-mt-28 w-full pt-64 px-[2%] sm:px-[5%]"
       >
-        <h2 className="text-[12vw] md:text-[4vw] font-semibold !leading-[1.5] overflow-clip mb-24">
-          <motion.span
-            variants={sectionTitleFadeIn}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            className="inline-block"
-          >
-            Work Portfolio
-          </motion.span>
-        </h2>
+        <SectionTitle title="Work Portfolio" />
 
-        <div>
+        <div className="mt-24">
           {projects
             .filter((project) => project.category === activeCategory)
             .map((project) => {
