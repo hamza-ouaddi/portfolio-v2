@@ -4,11 +4,21 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
+const heroSlideUp = {
+  initial: {
+    y: 300,
+  },
+  animate: {
+    y: 0,
+    transition: { duration: 0.6, ease: [0.33, 1, 0.68, 1], delay: 3 },
+  },
+};
+
 const headingContainer = {
   initial: {},
   animate: {
     transition: {
-      delayChildren: 0,
+      delayChildren: 3,
       staggerChildren: 0.1,
     },
   },
@@ -31,7 +41,10 @@ function ModernHero() {
   const headingContent = ["Full Stack ", "Developer ", "& UI/UX ", "Designer"];
 
   return (
-    <section
+    <motion.section
+      variants={heroSlideUp}
+      initial="initial"
+      animate="animate"
       ref={ref}
       id="home"
       className="flex flex-col gap-4 md:gap-8 lg:gap-12 xl:gap-24 justify-center text-center w-full h-[70vh] 2xl:h-[72vh] px-[2%] sm:px-[5%] sm:mb-0 mt-0 sm:mt-32 scroll-mt-96"
@@ -62,7 +75,7 @@ function ModernHero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{
               ease: [0.6, 0.01, 0.05, 0.95],
-              delay: 0.8,
+              delay: 3.4,
               duration: 1,
             }}
             className=" text-[1.25em] sm:text-[3vw] md:text-[2vw] lg:text-[1.5vw] xl:text-[1.25vw] text-left font-normal leading-[1.4]"
@@ -74,7 +87,7 @@ function ModernHero() {
           </motion.p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
