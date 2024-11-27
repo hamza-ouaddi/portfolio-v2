@@ -15,7 +15,7 @@ const sectionTitleFadeIn = {
 
 function SectionTitle({ title }: { title: string }) {
   return (
-    <div className="text-center md:text-center max-sm:pb-14 max-sm:-mb-16 overflow-clip w-full">
+    <div className="text-center md:text-center pb-14 sm:pb-6 md:pb-8 3xl:pb-2 max-sm:-mb-16 overflow-clip w-full">
       <motion.h2
         variants={sectionTitleFadeIn}
         initial="initial"
@@ -24,7 +24,7 @@ function SectionTitle({ title }: { title: string }) {
           once: true,
           amount: 0.005,
         }}
-        className="inline-block text-[3em] md:text-[4vw] font-medium md:font-semibold leading-none sm:leading-normal"
+        className="inline-block text-[3em] md:text-[6vw] xl:text-[4vw] font-medium md:font-semibold leading-none sm:leading-normal"
       >
         {title}
       </motion.h2>
