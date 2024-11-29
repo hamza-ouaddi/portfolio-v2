@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import personalImage from "@/public/assets/images/my-image.jpg";
 import darkLogo from "@/public/assets/images/logo-icon-dark.svg";
-
 import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
 import { BsLinkedin, BsGithub, BsDribbble } from "react-icons/bs";
@@ -119,7 +118,10 @@ export default function About() {
             <div className="flex flex-row justify-center gap-4 sm:gap-2 max-sm:items-center max-sm:w-full">
               <PrimaryLinkButton title="My work" link="/work" />
 
-              <SecondaryLinkButton title="Resume" link="/resume" />
+              <SecondaryLinkButton
+                title="Resume"
+                link="/assets/hamza-ouaddi-cv.pdf"
+              />
             </div>
             <div className="flex flex-row items-center justify-center gap-2 ">
               <IconLinkButton
