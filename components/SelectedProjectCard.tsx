@@ -4,7 +4,7 @@ import { projects } from "@/lib/data";
 import { motion, useTransform, MotionValue } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
-import { BsArrowDownRight, BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import SecondaryIconLinkButton from "./ui/SecondaryIconLinkButton";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
@@ -40,7 +40,7 @@ export default function SelectedProjectCard({
       style={{
         scale: scaleProgress,
       }}
-      className="group flex items-start h-[100vh] sticky top-0"
+      className="group  h-[100vh] sticky top-0"
     >
       <section
         style={
@@ -49,7 +49,7 @@ export default function SelectedProjectCard({
             "--dynamic-color": color,
           } as React.CSSProperties
         }
-        className={`relative flex lg:items-center flex-col-reverse lg:flex-row lg:group-even:flex-row-reverse max-w-[1200px] 3xl:max-w-[62vw]  lg:min-h-[66vh] lg:h-[520px] mb-3 sm:mb-8 bg-gradient-to-tr group-even:bg-gradient-to-tl from-gray-100 from-0% to-[var(--dynamic-color)] to-100% dark:from-gray-800 dark:to-[var(--dynamic-color)] transition rounded-2xl border-black/5 overflow-hidden container-shadow`}
+        className={`relative flex lg:items-center flex-col-reverse lg:flex-row lg:group-even:flex-row-reverse max-w-[1200px] 3xl:max-w-[62vw] lg:min-h-[66vh] lg:h-[520px] mb-3 sm:mb-8 bg-gradient-to-tr group-even:bg-gradient-to-tl from-gray-100 from-0% to-[var(--dynamic-color)] to-100% dark:from-gray-800 dark:to-[var(--dynamic-color)] transition rounded-2xl border-black/5 overflow-hidden container-shadow`}
       >
         <div className="flex flex-col h-[340px] md:h-full py-6 px-5 sm:py-10 sm:px-8 lg:pr-2 lg:pl-10 lg:group-even:pr-10 lg:group-even:pl-2 max-w-full lg:max-w-[58%] max-lg:bg-gray-100 max-lg:dark:bg-[#282F3C] z-10 max-lg:secondary-container-shadow">
           <div className="max-sm:flex justify-between items-start">

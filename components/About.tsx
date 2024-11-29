@@ -1,16 +1,13 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useActiveSectionContext } from "@/context/active-section-context";
 import personalImage from "@/public/assets/images/my-image.jpg";
 import darkLogo from "@/public/assets/images/logo-icon-dark.svg";
 
 import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin, BsGithub, BsDribbble } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsDribbble } from "react-icons/bs";
 import PrimaryLinkButton from "./ui/PrimaryLinkButton";
 import SecondaryLinkButton from "./ui/SecondaryLinkButton";
 import IconLinkButton from "./ui/IconLinkButton";

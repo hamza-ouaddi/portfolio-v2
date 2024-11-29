@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
@@ -11,8 +11,6 @@ import Image from "next/image";
 import heroBackground from "@/public/assets/images/layout-background.svg";
 import ReactLenis from "lenis/react";
 import "lenis/dist/lenis.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const manrope = Manrope({ subsets: ["latin"] });
 

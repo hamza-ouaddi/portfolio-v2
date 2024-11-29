@@ -39,7 +39,7 @@ export default function Skills() {
     <section
       ref={ref}
       id="skills"
-      className="relative flex flex-col justify-center w-full text-center px-[2%] sm:px-[5%] max-lg:my-28 scroll-mt-28 mb-28 sm:mb-40 overflow-x-clip"
+      className="relative flex flex-col justify-center w-full text-center px-[2%] sm:px-[5%] max-lg:mt-28 mb-28 sm:mb-40 scroll-mt-28 overflow-x-clip"
     >
       <SectionTitle title="Skills" />
 
