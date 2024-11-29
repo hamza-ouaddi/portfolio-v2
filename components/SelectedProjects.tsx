@@ -4,21 +4,7 @@ import React, { useRef } from "react";
 import { useSectionInView } from "@/lib/hooks";
 import SelectedProjectCard from "./SelectedProjectCard";
 import { useScroll } from "framer-motion";
-import { motion } from "framer-motion";
-import PrimaryLinkButton from "./ui/PrimaryLinkButton";
 import SectionTitle from "./ui/SectionTitle";
-
-const sectionTitleFadeIn = {
-  initial: { opacity: 0, y: 100 },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      ease: [0.6, 0.01, 0.05, 0.95],
-      duration: 1.5,
-    },
-  },
-};
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.1);
@@ -33,12 +19,12 @@ export default function Projects() {
     <section
       ref={ref}
       id="projects"
-      className="flex flex-col justify-center items-center scroll-mt-28 max-lg:my-40 mb-0 md:mb-40 w-full px-[2%] sm:px-[5%]"
+      className="flex flex-col justify-center items-center scroll-mt-28 max-lg:mt-28 mb-0 lg:mb-40 w-full px-[2%] sm:px-[5%]"
     >
       <SectionTitle title="Selected Projects" />
       <div
         ref={containerRef}
-        className="w-full flex flex-col justify-center items-center"
+        className="w-full flex flex-col justify-center items-center mb-20 sm:mb-64 md:mb-80 lg:mb-0"
       >
         {projects
           .filter((project) => project.preferred)
@@ -57,7 +43,6 @@ export default function Projects() {
             );
           })}
       </div>
-      <PrimaryLinkButton title="More projects" link="/work" />
     </section>
   );
 }
