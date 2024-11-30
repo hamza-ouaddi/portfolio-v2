@@ -2,24 +2,11 @@
 
 import { categories, projects } from "@/lib/data";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import SingleWorkCard from "@/components/SingleWorkCard";
 import CategoryTabs from "@/components/CategoryTabs";
 import { BsArrowLeft } from "react-icons/bs";
 import Link from "next/link";
 import SectionTitle from "@/components/ui/SectionTitle";
-
-const sectionTitleFadeIn = {
-  initial: { opacity: 0, y: 100 },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      ease: [0.6, 0.01, 0.05, 0.95],
-      duration: 1.5,
-    },
-  },
-};
 
 export default function Work() {
   const [activeCategory, setActiveCategory] = useState("Development");
