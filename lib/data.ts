@@ -24,7 +24,7 @@ import mbouaBranding from "@/public/assets/Portfolio/graphic-design/MBOUA-Brandi
 import hopeBranding from "@/public/assets/Portfolio/graphic-design/Hope-Branding.jpg";
 import creativeEyeBranding from "@/public/assets/Portfolio/graphic-design/CreativeEye-Branding.jpg";
 
-export const links = [
+export const headerLinks = [
   {
     name: "Home",
     hash: "#home",
@@ -44,6 +44,25 @@ export const links = [
   {
     name: "Contact",
     hash: "#contact",
+  },
+] as const;
+
+export const footerLinks = [
+  {
+    name: "My projects",
+    url: "/work",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/hamza-ouaddi/",
+  },
+  {
+    name: "Github",
+    url: "https://github.com/hamza-ouaddi",
+  },
+  {
+    name: "Dribbble",
+    url: "https://dribbble.com/hamza_adi",
   },
 ] as const;
 

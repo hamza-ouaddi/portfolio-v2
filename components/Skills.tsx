@@ -6,18 +6,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import SectionTitle from "./ui/SectionTitle";
 
-const sectionTitleFadeIn = {
-  initial: { opacity: 0, y: 100 },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      ease: [0.6, 0.01, 0.05, 0.95],
-      duration: 1.5,
-    },
-  },
-};
-
 const carouselFadeIn = {
   initial: { opacity: 0 },
   animate: {
