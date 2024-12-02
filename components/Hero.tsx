@@ -35,7 +35,7 @@ const headingParts = {
   },
 };
 
-function ModernHero() {
+function Hero() {
   const { ref } = useSectionInView("Home", 0.5);
 
   const headingContent = ["Full Stack ", "Developer ", "& UI/UX ", "Designer"];
@@ -91,4 +91,4 @@ function ModernHero() {
   );
 }
 
-export default ModernHero;
+export default Hero;

@@ -6,7 +6,7 @@ import SelectedProjectCard from "./SelectedProjectCard";
 import { useScroll } from "framer-motion";
 import SectionTitle from "./ui/SectionTitle";
 
-export default function Projects() {
+export default function SelectedProjects() {
   const { ref } = useSectionInView("Projects", 0.1);
   const containerRef = useRef<HTMLDivElement>(null);
 
