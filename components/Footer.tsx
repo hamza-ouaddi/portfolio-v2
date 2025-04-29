@@ -46,7 +46,7 @@ function Footer() {
         className="text-center md:text-left"
       >
         <p>&copy; {currentYear} Hamza Ouaddi. All rights reserved.</p>
-        <p>hamzaouaddi04@gmail.com</p>
+        <p>hello@hamzaouaddi.com</p>
       </motion.div>
 
       <motion.div variants={containerChildren} className="space-x-6">
