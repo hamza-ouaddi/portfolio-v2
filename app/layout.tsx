@@ -17,6 +17,14 @@ const manrope = Manrope({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Hamza Ouaddi",
   description: "Hamza Ouaddi Personal Website",
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico", // /public path
+        href: "/favicon.ico", // /public path
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
